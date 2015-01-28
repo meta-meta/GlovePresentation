@@ -41,334 +41,657 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<iframe id="youtube-video" width="960" height="720" src="//www.youtube.com/embed/AacoxHFYvZw?start=45&amp;rel=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+
+						<aside class="notes">
+							The Wizard Fred Savage, Jenny Lewis (Rilo Kiley)<br>
+							notice theme from Close Encounters
+						</aside>
+					</section>
+
+					<section>
+						<iframe width="1280" height="720" src="//www.youtube.com/embed/T_nbL-0TFn0?start=480&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+						<aside class="notes">
+							The Glove Project by Reality Quest for N64 and PS1<br>
+							because we never learn
+						</aside>
+					</section>
+
+					<section>
+						<iframe width="960" height="720" src="//www.youtube.com/embed/8p0jmewhXeU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+						<aside class="notes">
+							Johnny Mnemonic
+						</aside>
+					</section>
+				</section>
+
+
+				<!-- Commercial Gloves -->
+
+				<section>
+					<section><h1>What's out there now?</h1></section>
+
+					<section data-markdown>
+						<script type="text/template">
+							# Power Glove $150 + Hacking
+							![](images/Power_Glove_2.jpg)
+							## Bend Sensors <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Original prototype featured Fiber Optics with scratches near the joint cause it to transmit less light when bent. <!-- .element: class="fragment" data-fragment-index="1" -->
+							* 8 bits per finger. <!-- .element: class="fragment" data-fragment-index="1" -->
+							* In production, carbon based sensors were used. 1 byte for all 4 tracked fingers <!-- .element: class="fragment" data-fragment-index="1" -->
+
+
+							## Position Tracking <!-- .element: class="fragment" data-fragment-index="2" -->
+							* Pair of side-by-side ultrasonic speakers on glove transmit signal to array of 3 microphones around the TV. <!-- .element: class="fragment" data-fragment-index="2" -->
+							* 40khz signal is triangulated to determine X,Y,Z Yaw and Roll <!-- .element: class="fragment" data-fragment-index="2" -->
+							* Pitch cannot be calculated because hand can pitch without changing the location of the speakers. <!-- .element: class="fragment" data-fragment-index="2" -->
+
+							Note:
+							Must face TV...  Actual Power Glove only detects Roll... 2 bits per finger for bend sensing, pinky not detected to save money.
+						</script>
+					</section>
+
+					<section>
+						<h1>Peregrine $150</h1>
+						<img src="images/t700_x2_176a2bdde231dfeb907240e629fdf1bb.jpg" />
 						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<ul>
+							<li>18 Touch Points, 3 Activator Pads</li>
+							<li>Enter commands and keyboard shortcuts</li>
+							<li>Can use in addition to keyboard</li>
+						</ul>
+
 					</section>
+
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
+						<h1>Essential Reality P5 Gaming Glove $40</h1>
+						<img src="images/41TDMRHVWVL.jpg" />
 						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<ul>
+							<li>6 DOF at 45 hz</li>
+							<li>Optical Tracking</li>
+							<li>Bend Sensor at 60hz</li>
+							<li>Wireless</li>
+							<li>USB 1.1 compliant</li>
+						</ul>
+
+						<aside class="notes">
+
+						</aside>
 					</section>
+
+					<section>
+						<h1>StretchSense $800 2 stretch sensor kit</h1>
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/7uh0UWPEur4?start=120&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+						<aside class="notes">capacitive</aside>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							# IGS-Glove $24k ??
+							<img src="images/glove_gray1.jpg" width="250" />
+							## Inertial Sensors (IMU) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+							Note: http://youtu.be/BdCDOhD_7aA?t=7s
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							# Polhemus
+							<iframe width="420" height="315" src="https://www.youtube.com/embed/Lhi4ssWPU8Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+							## AC Electromagnetic <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Individual finger tracking <!-- .element: class="fragment" data-fragment-index="1" -->
+							* 6DOF <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Fast <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Repeatable <!-- .element: class="fragment" data-fragment-index="1" -->
+
+							Note: Virtusphere http://youtu.be/5PSFCnrk0GI?list=PLB7C1356CCD430830
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							# Control VR $600 (not currently accepting pre-orders)
+							<img src="images/Product-Features.jpg" width="250" />
+							## Inertial Sensors <!-- .element: class="fragment" data-fragment-index="1" -->
+
+							Note: Ships 2nd quarter of 2015.
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							# Leap Motion $80
+							<img src="images/leap-motion-3d-motion-gesture-controller-10-large.jpg" width="250" />
+							## Optical Sensor <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Individual finger tracking <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Small work area <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Only certain hand orientations work due to obstruction <!-- .element: class="fragment" data-fragment-index="1" -->
+
+							Note:
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							# Kinect One $200
+							<img src="images/3d377852-0f21-4074-a3c2-35f418170848.jpg" width="250" />
+							## Optical Sensor <!-- .element: class="fragment" data-fragment-index="1" -->
+							* SDK tracks 3 hand states <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Latency <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Only certain hand orientations work due to obstruction <!-- .element: class="fragment" data-fragment-index="1" -->
+
+							Note:
+							[HandPose - MS Research](http://youtu.be/A-xXrMpOHyc)
+							[Hand Tracking - Forth Institute](http://cvrlcode.ics.forth.gr/handtracking/)
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							# Nimble VR ~$150???
+							<img src="images/dce2ae20268d4bdd1fd772f7a6774b93_large.jpg" width="450" />
+							## Optical Sensor <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Time of flight optical sensor <!-- .element: class="fragment" data-fragment-index="1" -->
+							* wider FOV than Leap Motion <!-- .element: class="fragment" data-fragment-index="1" -->
+
+							Note:Acquired by Oculus
+
+						</script>
+					</section>
+
+
+					<section data-markdown>
+						<script type="text/template">
+							# Sixense Razer Hydra $250 on ebay
+							<img src="images/Hydra01.png" width="400" />
+							## Magnetic Sensors <!-- .element: class="fragment" data-fragment-index="1" -->
+							* This is what my glove uses for position/orientation <!-- .element: class="fragment" data-fragment-index="1" -->
+
+							Note: Discontinued
+
+						</script>
+					</section>
+
+
+					<section data-markdown>
+						<script type="text/template">
+							# Sixense STEM $300 - $580
+							<img src="images/5base_angle_large.png" width="500" />
+							## Magnetic Sensors <!-- .element: class="fragment" data-fragment-index="1" -->
+							* Will eventually replace the Razer Hydra in my glove <!-- .element: class="fragment" data-fragment-index="1" -->
+
+							Note: Zach, when does it ship?
+
+						</script>
+					</section>
+
 				</section>
 
+
+
+				<!-- My DIY Glove -->
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
+					<section data-markdown>
+						<script type="text/template">
+							# Building a glove suitable for vr
+							![](images/VirtualGlove.JPG)
+
+							* Features
+								* Position and Orientation Tracking
+								* Individual Finger Scalar Data
+								* Haptic Feedback
+
+							* Constraints
+								* Affordable
+								* Low Complexity
+								* Durable
+
+							Note:
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							![](images/gloveWiring.jpg)
+							Note:
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							![](images/gloveWithBoard.jpg)
+							Note:
+						</script>
+					</section>
+
 				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+
+
+
+				<!-- Parts -->
 
 				<section data-markdown>
 					<script type="text/template">
-						## Markdown support
+						# Flex Sensor from SparkFun
+						![](images/08606-03-L.jpg)
+						## Resistance varies with flexion <!-- .element: class="fragment" data-fragment-index="1" -->
+						## $12.95 &times; 5 = :-/  <!-- .element: class="fragment" data-fragment-index="2" -->
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
+						Note:
+						Complaints of inconsistent resistance ranges... breakage at contact points
 					</script>
 				</section>
 
+
+				<!-- How to make Bend Sensors-->
 				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+					<section>
+						<h1>how to make an incredibly cheap pressure/bend sensor</h1>
+					</section>
+
+					<section>
+						<img src="images/P1120177.jpg" />
 
 						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
+							Materials
 						</aside>
 					</section>
+
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<img src="images/P1120180.jpg" />
+
+						<aside class="notes">
+							Velostat - Resistence decreases with pressure<br>
+							http://www.amazon.com/gp/product/B00BEKMVX4/ref=cm_cr_ryp_prd_ttl_sol_0<br>
+							$15 for 100 bags
+						</aside>
 					</section>
-				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+					<section>
+						<img src="images/P1120181.jpg" />
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<aside class="notes">
+							Start by placing the lead on one side
+						</aside>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+
+					<section>
+						<img src="images/P1120182.jpg" />
+
+						<aside class="notes">
+							tape it down with copper tape. conductive adhesive
+						</aside>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+
+					<section>
+						<img src="images/P1120183.jpg" />
+
+						<aside class="notes">
+							same on the opposite side
+						</aside>
 					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
+
+					<section>
+						<img src="images/P1120184.jpg" />
+
+						<aside class="notes">
+							cut to size
+						</aside>
 					</section>
+
+					<section>
+						<img src="images/P1120185.jpg" />
+
+						<aside class="notes">
+							wrap in duct tape
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/P1120186.jpg" />
+
+						<aside class="notes">
+							finished?
+						</aside>
+					</section>
+
+					<section>
+						<h1>WRONG</h1>
+
+						<aside class="notes">
+							Conductive adhesive is not that conductive.<br>
+							Pressure sensing works great where the wires are.<br>
+							Not so well on the rest of the sensor.
+						</aside>
+					</section>
+
+					<section>
+						<h1>Redesign</h1>
+					</section>
+
+					<section>
+						<img src="images/P1120191.jpg" />
+
+						<aside class="notes">
+							This approach is almost the same, but notice the two extra pieces of copper tape.
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/P1120192.jpg" />
+
+						<aside class="notes">
+							this time we'll start by taping the copper to the center of gorilla tape<br>
+							so that the non-adhesive side is in contact with the velostat
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/P1120193.jpg" />
+
+						<aside class="notes">
+							place lead at end of copper tape
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/P1120195.jpg" />
+
+						<aside class="notes">
+							secure it with a little tab of copper tape. <br>
+							alternately you can solder to copper tape
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/P1120196.jpg" />
+
+						<aside class="notes">
+							place strip of velostat over copper tape so that it's completely covered<br>
+							this highlights another mistake. don't let that copper tape stick out
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/P1120197.jpg" />
+
+						<aside class="notes">
+							repeat the first two steps for the other side
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/P1120198.jpg" />
+
+						<aside class="notes">
+							join the two together being careful that the velostat completely covers the copper tape
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/P1120201.jpg" />
+
+						<aside class="notes">
+							test with multimeter. 134 ohms resting position
+						</aside>
+					</section>
+
+					<section>
+						<img src="images/P1120202.jpg" />
+
+						<aside class="notes">
+							drops down to 13.4 ohms with force applied
+						</aside>
+					</section>
+					
+					
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
 
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+					<h2>How do we make this mean something to the Arduino?</h2>
 
-    var nodes = document.querySelectorAll( selector );
+					<div class="fragment">
+						<h3>Voltage Divider</h3>
+						<img src="images/voltageDivider.png" />
+					</div>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+					<h4 class="fragment">R<sub>2</sub>: Bend Sensor </h4>
+					<h4 class="fragment">R<sub>1</sub>: Appropriately Matched Resistor for Sensor Range</h4>
+					<h4 class="fragment">V<sub>out</sub> = V<sub>in</sub> &times; R<sub>2</sub> / (R<sub>1</sub> + R<sub>2</sub>)</h4>
+					<h4 class="fragment">V<sub>in</sub>: +5V</h4>
+					<h4 class="fragment">V<sub>out</sub>: ~1-4V <br> &lt; optimal range but good enough for me</h4>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						Arduino ADC takes 0 - 5v<br>
+
+						this consumes some power. could be more efficient.<br>
+						arduino offers 10bit (1024) adc. this circuit utilizes about 60% of that<br>
+						we could use another voltage divider and an amplifier to increase the range but be very careful not to go above around 5.5V as it will destroy your I/O pin
 					</aside>
 				</section>
 
+
+				<!-- Tactile Feedback-->
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					<section>
+						<h1>Haptic Feedback</h1>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Direct Nerve Stimulation
+							* $$$$$$$$$ Medical Procedure
+							* Electrical connections to nerves tend to degrade over time
+
+							[An Artificial Hand with Real Feelings](http://www.technologyreview.com/news/522086/an-artificial-hand-with-real-feelings/)
+						</script>
+					</section>
+
+					<section>
+						<h2>Spatially Transparent Electrotactile Display</h2>
+
+						<iframe width="420" height="315" src="//www.youtube.com/embed/q5KPDtrZ9qs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+					</section>
+
+					<section>
+						<h2>Maglev Haptic Interfaces - Carnegie Mellon</h2>
+
+						<iframe width="560" height="315" src="//www.youtube.com/embed/cMi75SrDbsk?start=11&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							# CyberGlove Systems Haptic Workstation
+							<iframe width="420" height="315" src="https://www.youtube.com/embed/4aMCJDOEi0k?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+							Note:
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Electrotactile Stimulators
+
+							![tactile array](images/tactilescience.png)
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Eccentric Rotating Mass (ERM) Coin or Pancake Vibrating Motors
+							####This is what I am currently using
+							* ~50&cent;/pc (or cheaper if  you order bulk from China)
+							* simple to control on/off (high from Arduino digital out => switch on a transistor which powers the motor)
+							* low temporal resolution = pulses only down to ~50ms
+							* no braking so a pulse will take a moment to taper off
+							* good for simulating electric shock
+
+							![Pancake Vibrator](images/coin-shaftless-vibration-motor-exploded-view.690.478.r.s.jpg)
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Linear Resonant Actuators (LRA's)
+							* More expensive and complex
+							* more efficient because of resonance
+							* faster start time ~5ms
+							* controlled by AC signal which must match the actuator's natural resonant frequency
+							* brakeable with diver chip
+							![Driver](images/DRV2605.jpg)
+							* driver chip controlled by PWM
+
+
+
+							![LRA](images/lra-linear-vibrator-construction.690.510.r.s.jpg)
+
+						</script>
+					</section>
+
 				</section>
 
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
+					<section>
+						<h1>Too many I/O's for Arduino?</h1>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Mux Shield II
+							* 3 => 48 Analog/Digital In, Digital Out
+							* 3 groups of 16 pins selectable as in or out
+							* analog multiplexers for input
+							* shift registers for output
+
+							![Mux Shield](images/11723-01.jpg)
+							![Mux Shield](images/Tyco-Electronics-5650868-5.jpg)
+
+							Note: I have 5 waiting to be wired to an Arduino Mega
+						</script>
+					</section>
 				</section>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
 
 				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
+					<section>
+						<h1>Other Glove Projects</h1>
+					</section>
+
+					<section>
+						<h2>Tactile dataglove with fabric-based sensors</h2>
+						<iframe width="560" height="315" src="//www.youtube.com/embed/YFDfSIRei7c?showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+						<h4>54 tactile cells allowing natural manual interactions to be captured</h4>
+					</section>
+
+					<section>
+						<h2>Fissure - VR Ableton Live Controller</h2>
+						<iframe width="1280" height="720" src="//www.youtube.com/embed/tz79NmSt_Vo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</section>
+
+
+					<section>
+						<h2>Imogen Heap "The Gloves"</h2>
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/ci-yB6EgVW4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+					</section>
+
+					<section>
+						<h2>Laetitia Sonami The Lady's Glove</h2>
+						<iframe width="960" height="720" src="//www.youtube.com/embed/ngygk20M1pI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+						<aside class="notes">
+							More street cred. First built glove in 1991 with a magnet and hall-effect sensors.
+						</aside>
+
+					</section>
+
+					<section>
+						<h2>"The Gloves" Prototype WiFi Gloves Using x-OSC and x-BIMU</h2>
+						<iframe width="560" height="315" src="//www.youtube.com/embed/3ygKcBOFLJU?start=48&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+						<br>
+
+						<ul>
+							<li>good for gestures</li>
+							<li>probably not great for VR because of drift and latency</li>
+							<li>wireless and self-contained a plus</li>
+						</ul>
+
+						<aside class="notes">skip to 48s</aside>
+
+					</section>
+
+					<section>
+						<h2>x-OSC ~$250</h2>
+						<img src="images/x-OSC-Board-Top.jpg" />
+						<br>
+						<ul>
+							<li>16 analog/digital inputs</li>
+							<li>16 PWM outputs (up to 50 mA per channel)</li>
+							<li>13 bit 400 Hz ADC</li>
+							<li>Gyroscope, Accelerometer, Magnetometer on board</li>
+							<li>Sends all data vis OSC messages over WiFi 54Mbps</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>esp8266 $3 unreliable WiFi board from China</h2>
+						<img src="images/1962071409162856464.jpg" />
+						<br>
+
+						<a href="http://hackaday.io/project/2879-esp8266-wifi-module-library">ESP8266 WiFi Module Library</a>
+					</section>
+
 				</section>
+
+
+				<!-- Finding Materials -->
+
+				<section data-markdown>
+					<script type="text/template">
+						## Resources
+						[KOBAKANT](http://www.kobakant.at/DIY/) Wealth of info about exotic materials and DIY projects, mostly wearables
+
+						[Mi.Mu Blog](http://theglovesproject.com/category/diy/) DIY version of "The Gloves" from Imogen Heap's team
+
+						[Less EMF](http://www.lessemf.com/plastic.html) Another source of Velostat (and tin foil hats)
+						<br>![RF SUit](images/rfSuit.jpg)
+
+						[Adafruit](http://www.adafruit.com/) Lots of innovative hardware building blocks and information
+
+						[Sparkfun](https://www.sparkfun.com/) Another electronics hobbyist site. Not as in depth as Adafruit
+
+						[Mouser](http://www.mouser.com/) They send you a phonebook sized catalog when you order from them. Makes you look more serious.
+						<br>![RF SUit](images/Mousers1.png)
+
+
+						Note:
+					</script>
+
+				</section>
+
 
 				<section style="text-align: left;">
 					<h1>THE END</h1>
 					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+						- <a href="https://github.com/meta-meta">https://github.com/meta-meta</a> My Github <br>
 					</p>
 				</section>
 
@@ -378,6 +701,7 @@ Reveal.addEventListener( 'customevent', function() {
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
 
 		<script>
 
@@ -391,6 +715,9 @@ Reveal.addEventListener( 'customevent', function() {
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
+				width: 1920,
+				height: 1080,
+
 				// Optional reveal.js plugins
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -400,6 +727,16 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
+			});
+
+			Reveal.configure({
+				keyboard: {
+					89: function() {
+					}
+//					13: 'next', // go to the next slide when the ENTER key is pressed
+//					27: function() {}, // do something custom when ESC is pressed
+//					32: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+				}
 			});
 
 		</script>
