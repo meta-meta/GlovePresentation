@@ -499,6 +499,18 @@
 						</script>
 					</section>
 
+					<section data-markdown>
+						<script type="text/template">
+							## Electrical muscle stimulation (EMS)
+
+							![EMS](images/new-tingmay-electronic-muscle-stimulator.jpg)
+
+							* Commercial units are a little pricey and not hack friendly
+							* DIY unit potentially dangerous/lethal
+
+						</script>
+					</section>
+
 					<section>
 						<h2>Spatially Transparent Electrotactile Display</h2>
 
@@ -581,7 +593,69 @@
 							![Mux Shield](images/11723-01.jpg)
 							![Mux Shield](images/Tyco-Electronics-5650868-5.jpg)
 
-							Note: I have 5 waiting to be wired to an Arduino Mega
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Why Even More I/O?
+							* Simultaneous development of multiple devices
+							* Large arrays of sensors or haptic feedback components
+						</script>
+
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Generalizing Glove Project to Other Devices
+
+							* A glove is just one concrete implementation of many potential devices for physical computing
+
+							* 3 major areas:
+
+								* physical device that has all the wires and sensors
+								* API encapsulates a model of the device in software
+								* between these two: Interface (arduino) send messages back and forth
+
+							Note: One thing about programming that tends to happen is you look for ways to abstract and generalize your problem especially if you're going to be doing many similar things. A glove, a shirt full of vibrator motors, expressive musical instruments with breath controllers and aftertouch. These are all things I'd like to implement and play around with. When I think about it, the problem breaks down into roughly 3 major pieces:
+
+							On one side there's the physical device that has all the wires and sensors.
+
+							On the other, there's the API which encapsulates the model of the device in software and supplies some coherent picture of the state of all the sensors for an application to consume. It also allows an application to control whatever feedback the device has whether it be status LEDs or vibrator motors.
+
+							In between these two ends is the interface layer satisfied in my case by an Arduino passing messages back and forth over Serial USB. In engineering the glove, the limitations of this layer have been instructive in deciding the number of sensors and vibrators to sew into it.
+							* Serial communication has a speed limit, and this is especially true of Serial over USB as the legacy interface appears to have been shoehorned into USB for compatability more than performance.
+							* There are only so many IO pins on a Mux shield
+							* 48 total
+							* 3 banks of 16 each of which is either input or output
+							* 2 hands, so up to 8 inputs and 16 outputs or vice-versa
+
+
+						</script>
+
+					</section>
+
+
+					<section data-markdown>
+						<script type="text/template">
+							## Arduino Mega + 5 Mux Shields
+							* 48 &times; 5 = 240 I/O pins
+							* + 18 or more free pins on the Arduino Mega
+
+							![Mux Shields](images/IMAG1171.jpg)
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## "MegaMux" Workbench Platform
+							### A mixing board for electronics nerds
+							* rapidly prototype new devices
+							* live code with Max/Puredata while tinkering with electronics
+
+							![Work Bench](images/IMAG1174.jpg)
+
 						</script>
 					</section>
 				</section>
